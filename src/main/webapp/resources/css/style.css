@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #3157d2;
+    padding: 20px;
+    text-align: center;
+    height: 35px;
+    color: white;
+}
+
+nav {
+    background-color: #8c89e7;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #842029;
+}
+
+section {
+    background-color: #e4e4e4;
+    padding: 20px;
+    height: 600px;
+}
+
+section h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #3157d2;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    margin: auto;
+    width: 220px;
+}
+
+input[type="text"] {
+    border: solid 2px;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border: solid 2px #D2691E;
+}
+.table{
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+table th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+    text-align: center;
+}

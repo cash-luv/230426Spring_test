@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="User">
+    <select id="findAll" resultType="user">
+        select * from member_tbl_02
+    </select>
+    <insert id="save" parameterType="User">
+        insert into member_tbl_02(custname,phone,address,joindate,grade,city)
+        values (#{custname}, #{phone}, #{address}, #{joindate},#{grade},#{city})
+    </insert>
+    <delete id="delete" parameterType="Long" >
+        delete  from member_tbl_02 where custno = #{custno}
+    </delete>
+    <select id="findById" parameterType="Long" resultType="user">
+        select * from member_tbl_02 where custno = #{custno}
+    </select>
+    <update id="update" parameterType="user">
+        update book_table set 회원성명=#{custname}, 회원번호=#{phone}, 회원주소=#{address}, 가입일자=#{joindate},
+                              고객등급=#{grade},도시코드=#{city}
+        where custno=#{custno}
+    </update>
+</mapper>
